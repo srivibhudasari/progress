@@ -1,0 +1,67 @@
+[ec2-user@ip-172-31-21-53 ~]$ docker --version
+docker images
+docker ps -a
+docker ps
+Docker version 25.0.14, build 0bab007
+REPOSITORY                    TAG       IMAGE ID       CREATED        SIZE
+saimage                       v2        690d0463286a   4 weeks ago    227MB
+srivibhu/samorningproject     v2        690d0463286a   4 weeks ago    227MB
+saimage                       v1        8299162e9954   4 weeks ago    227MB
+ubuntu                        latest    6e92c4fd8dfd   6 weeks ago    101MB
+tomcat                        latest    e86602e31cca   6 weeks ago    422MB
+httpd                         latest    92605b8e6329   7 weeks ago    117MB
+nginx                         latest    e9567a94eddc   7 weeks ago    162MB
+gcr.io/k8s-minikube/kicbase   v0.0.51   2c31ef2958e5   2 months ago   1.34GB
+busybox                       latest    aaef90e06523   6 months ago   4.45MB
+CONTAINER ID   IMAGE                                 COMMAND                  CREATED          STATUS                     PORTS                                   NAMES
+d7dbb941e9ea   saimage:v2                            "/bin/sh -c 'apache2…"   40 seconds ago   Up 32 seconds              80/tcp                                  myapp.9.xbojxmqnkn3d2dm98rdwhhax1
+48b963fcd1a2   saimage:v2                            "/bin/sh -c 'apache2…"   40 seconds ago   Up 32 seconds              80/tcp                                  myapp.3.mba544juvkoipye2vledfifvn
+7dc76d82ee5e   saimage:v2                            "/bin/sh -c 'apache2…"   40 seconds ago   Up 33 seconds              80/tcp                                  myapp.5.9ajhxgcnwa1kes2hkbyh4orle
+9eb8594c55f1   saimage:v2                            "/bin/sh -c 'apache2…"   40 seconds ago   Up 32 seconds              80/tcp                                  myapp.4.st6ysxb5xb2tokmvrdyanfytm
+dfaacef4e745   saimage:v2                            "/bin/sh -c 'apache2…"   40 seconds ago   Up 32 seconds              80/tcp                                  myapp.7.76dbbiiojefovtf1d9acj5wuo
+de1f227dc363   saimage:v2                            "/bin/sh -c 'apache2…"   40 seconds ago   Up 32 seconds              80/tcp                                  myapp.8.4qq85yuk5fj0nue9bd980xjq4
+80a556a92153   saimage:v2                            "/bin/sh -c 'apache2…"   40 seconds ago   Up 32 seconds              80/tcp                                  myapp.6.e7h5pn5ezd4o88fcfue08dq6k
+6d8babe9b2ca   saimage:v2                            "/bin/sh -c 'apache2…"   40 seconds ago   Up 32 seconds              80/tcp                                  myapp.10.dx9wlldit2i99ey2anerqvgit
+fafff12be1c9   saimage:v2                            "/bin/sh -c 'apache2…"   40 seconds ago   Up 33 seconds              80/tcp                                  myapp.2.u9p07acu68lhejg4hg0d1j10w
+8b9366acee6d   saimage:v2                            "/bin/sh -c 'apache2…"   40 seconds ago   Up 32 seconds              80/tcp                                  myapp.1.murue5iht5on9snes2wk4wosb
+7a51d97eb5cb   gcr.io/k8s-minikube/kicbase:v0.0.51   "/usr/local/bin/entr…"   4 weeks ago      Exited (130) 3 weeks ago                                           minikube
+ad22cf3ffd4d   httpd:latest                          "httpd-foreground"       4 weeks ago      Exited (255) 4 weeks ago   0.0.0.0:8082->80/tcp, :::8082->80/tcp   myc-web1-1
+0408d2e06dc3   nginx:latest                          "/docker-entrypoint.…"   4 weeks ago      Exited (255) 4 weeks ago   0.0.0.0:8081->80/tcp, :::8081->80/tcp   myc-web2-1
+5082e3dfb864   httpd                                 "httpd-foreground"       4 weeks ago      Exited (255) 4 weeks ago   80/tcp                                  vc
+CONTAINER ID   IMAGE        COMMAND                  CREATED          STATUS          PORTS     NAMES
+d7dbb941e9ea   saimage:v2   "/bin/sh -c 'apache2…"   40 seconds ago   Up 32 seconds   80/tcp    myapp.9.xbojxmqnkn3d2dm98rdwhhax1
+48b963fcd1a2   saimage:v2   "/bin/sh -c 'apache2…"   40 seconds ago   Up 32 seconds   80/tcp    myapp.3.mba544juvkoipye2vledfifvn
+7dc76d82ee5e   saimage:v2   "/bin/sh -c 'apache2…"   40 seconds ago   Up 33 seconds   80/tcp    myapp.5.9ajhxgcnwa1kes2hkbyh4orle
+9eb8594c55f1   saimage:v2   "/bin/sh -c 'apache2…"   40 seconds ago   Up 32 seconds   80/tcp    myapp.4.st6ysxb5xb2tokmvrdyanfytm
+dfaacef4e745   saimage:v2   "/bin/sh -c 'apache2…"   40 seconds ago   Up 32 seconds   80/tcp    myapp.7.76dbbiiojefovtf1d9acj5wuo
+de1f227dc363   saimage:v2   "/bin/sh -c 'apache2…"   40 seconds ago   Up 32 seconds   80/tcp    myapp.8.4qq85yuk5fj0nue9bd980xjq4
+80a556a92153   saimage:v2   "/bin/sh -c 'apache2…"   40 seconds ago   Up 32 seconds   80/tcp    myapp.6.e7h5pn5ezd4o88fcfue08dq6k
+6d8babe9b2ca   saimage:v2   "/bin/sh -c 'apache2…"   40 seconds ago   Up 32 seconds   80/tcp    myapp.10.dx9wlldit2i99ey2anerqvgit
+fafff12be1c9   saimage:v2   "/bin/sh -c 'apache2…"   40 seconds ago   Up 33 seconds   80/tcp    myapp.2.u9p07acu68lhejg4hg0d1j10w
+8b9366acee6d   saimage:v2   "/bin/sh -c 'apache2…"   40 seconds ago   Up 32 seconds   80/tcp    myapp.1.murue5iht5on9snes2wk4wosb
+[ec2-user@ip-172-31-21-53 ~]$ 
+
+
+
+
+[ec2-user@ip-172-31-21-53 ~]$ docker run -d --name demo-app \
+  -p 8080:8080 srivibhu/maven-webapp:1.0
+Unable to find image 'srivibhu/maven-webapp:1.0' locally
+1.0: Pulling from srivibhu/maven-webapp
+4e07a0f12b2c: Already exists 
+06ad70e463aa: Already exists 
+ffef58b983c1: Pull complete 
+4411437139e9: Pull complete 
+cb3511313ef0: Pull complete 
+7b5b1cd28d30: Pull complete 
+7f43d7041661: Pull complete 
+4f4fb700ef54: Pull complete 
+76a87423aaa3: Pull complete 
+fadf62706e8e: Pull complete 
+Digest: sha256:54cd0e744e43cbceea0c38d1caa9c9442b500b3874334b9456f9295f6e81437f
+Status: Downloaded newer image for srivibhu/maven-webapp:1.0
+1eb766e5aa0e90299f7437d731c445924a5b25a5f4de174a6b0c43ac72b9211f
+docker: Error response from daemon: driver failed programming external connectivity on endpoint demo-app (c10b67da2cc14ec45a3b1a70bc24eee4597ff9370b9775b2e49f3ad60b0b6a8f): Error starting userland proxy: listen tcp4 0.0.0.0:8080: bind: address already in use.
+[ec2-user@ip-172-31-21-53 ~]$ docker images | grep maven-webapp
+srivibhu/maven-webapp         1.0       e7df4cc6b596   4 weeks ago    504MB
+[ec2-user@ip-172-31-21-53 ~]$ 
